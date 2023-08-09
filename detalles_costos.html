@@ -1,0 +1,209 @@
+<!DOCTYPE html><!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v4.2.2
+* @link https://coreui.io/product/free-bootstrap-admin-template/
+* Copyright (c) 2023 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://github.com/coreui/coreui-free-bootstrap-admin-template/blob/main/LICENSE)
+--><!-- Breadcrumb-->
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
+  <!-- Vendors styles-->
+  <link rel="stylesheet" href="vendors/simplebar/css/simplebar.css">
+  <link rel="stylesheet" href="css/vendors/simplebar.css">
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- We use those styles to show code examples, you should remove them in your application.-->
+  <link href="css/examples.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--MENU DEL COSTADDO -->
+  <div class="sidebar sidebar-dark sidebar-fixed" id="sidebar">
+    <div class="sidebar-brand d-none d-md-flex">
+    </div>
+    <ul class="sidebar-nav" data-coreui="navigation" data-simplebar="">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+          Menú
+        </a>
+      </li>
+      <li class="nav-title">Mantenedor</li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-droplet me-3"></i> <span>APR</span>
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-users me-3"></i><span>Usuarios</span>
+        </a>
+      </li>
+
+      <li class="nav-title">Registros</li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-money-bill-trend-up me-3"></i> <span>Costos</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-sack-dollar me-3"></i><span>Ingresos</span>
+        </a>
+      </li>
+
+      <li class="nav-title">Gráficos</li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-money-bill-trend-up me-3"></i> <span>Costos</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fa-solid fa-sack-dollar me-3"></i><span>Ingresos</span>
+        </a>
+      </li>
+  </div>
+  <!--MENU DEL COSTADDO -->
+
+  <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+    <header class="header header-sticky mb-4">
+      <div class="container-fluid">
+        <!-- BREADCRUM -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb my-0 ms-2">
+            <li class="breadcrumb-item">
+              <!-- if breadcrumb is single--><span>Home</span>
+            </li>
+            <li class="breadcrumb-item active"><span>Mantendor Detalle de Costos</span></li>
+          </ol>
+        </nav>
+        <!-- BREADCRUM -->
+
+      </div>
+    </header>
+    <div class="body flex-grow-1 px-3">
+      <div class="container-lg">
+        <div class="row">
+          <h1>Detalle Costos Mensuales Nombre APR - AÑO</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#formulario">Agregar
+              Detalle</button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <table class=" table table-light">
+            <tr class="table-dark">
+              <td>Mes</td>
+              <td>Producc. M3</td>
+              <td>Factura. M3</td>
+              <td>Arranq. N°</td>
+              <td>E. Electric. KWH</td>
+              <td>Bombeo h</td>
+              <td>Cloro kg</td>
+              <td>Dotación L/H/D</td>
+              <td>Acciones</td>
+            </tr>
+
+            <tr>
+              <td>2022</td>
+              <td>APR La Línea Alhue</td>
+              <td><a href="#">agregar datos</a> | <a href="#">eliminar</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="formulario" tabindex="-1" aria-labelledby="formularioLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="formularioLabel">Nuevo registro de costos</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="#" method="post"></form>
+            <div class="modal-body">
+
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Año</label>
+                <div class="col-sm-10">
+                  <select name="anno" id="anno">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+
+                  </select>
+                  
+                </div>
+              </div>
+
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">APR</label>
+                <div class="col-sm-10">
+                  <select name="apr" id="apr">
+                    <option value="123">APR uno</option>
+                    <option value="456">APR dos</option>
+                    <option value="789">APR tres</option>
+                  </select>
+                </div>
+              </div> 
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+
+  </div>
+  <!-- CoreUI and necessary plugins-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
